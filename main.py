@@ -16,6 +16,8 @@ def main():
     job.work_size = 15
     job.collaborators = '2, 3'
     job.is_finished = False
+    db_sess.add(job)
+    db_sess.commit()
 
 
 
